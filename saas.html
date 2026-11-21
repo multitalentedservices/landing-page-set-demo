@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Billora — Invoicing for Small Businesses (Demo) | Landing Set A</title>
+<meta name="description" content="Demo SaaS landing page: Billora, a fictional invoicing and inventory app for small businesses. Demo prices and demo data only.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Billora (Demo)","applicationCategory":"BusinessApplication","offers":{"@type":"Offer","price":"12","priceCurrency":"USD"}}</script>
+</head>
+<body data-theme="saas">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="demo-ribbon">DEMO — Billora is a fictional product. Prices, figures and data below are demo content only.</div>
+<header class="site"><div class="wrap header-in">
+<a class="brand" href="saas.html">Billora</a>
+<nav class="main" aria-label="Main">
+<a href="index.html">Set Gallery</a><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#lead">Get a demo</a><a href="logs.html">Demo Logs</a>
+</nav></div></header>
+<main id="main">
+<section class="hero"><div class="wrap hero-grid">
+<div>
+<h1>Invoices out in minutes. Payments chased for you.</h1>
+<p class="lede">Billora is a fictional invoicing app for small businesses: create an invoice, send it, and let automatic reminders do the chasing — with simple inventory basics built in.</p>
+<div class="cta-row"><a class="btn" href="#lead">Get a free demo</a><a class="btn btn-wa" data-wa="saas" href="https://wa.me/923000000000" target="_blank" rel="noopener">WhatsApp us</a></div>
+<p class="note">Demo figures only: built for a 2–20 person business. No real product or results are claimed on this page.</p>
+</div>
+<div>
+<div class="mock" role="img" aria-label="Illustrative Billora product interface mock built in HTML and CSS, showing demo invoice rows">
+<div class="mock-bar">Billora — Invoices (DEMO DATA)</div>
+<div class="mock-body">
+<div class="mock-row"><span>INV-1042 · Corner Bakery</span><span class="pill">$240 · Paid</span></div>
+<div class="mock-row"><span>INV-1043 · City Pharmacy</span><span class="pill">$510 · Sent</span></div>
+<div class="mock-row"><span>INV-1044 · Bloom Salon</span><span class="pill">$95 · Reminder on</span></div>
+<div class="mock-row"><span>Inventory · A4 paper</span><span class="pill">Low stock</span></div>
+</div></div>
+<img class="hero-photo" src="assets/saas-workspace.jpg" alt="Small business workspace with a laptop showing charts (demo photography)" style="margin-top:16px">
+</div>
+</div></section>
+<section class="alt" id="features"><div class="wrap">
+<h2>Features that earn their place</h2>
+<div class="grid3">
+<div class="card"><h3>Fast invoicing</h3><p>Create and send a branded invoice in under two minutes, from phone or laptop.</p></div>
+<div class="card"><h3>Automatic reminders</h3><p>Polite payment reminders go out on your schedule — email first, WhatsApp on Growth and Pro.</p></div>
+<div class="card"><h3>Inventory basics</h3><p>Track stock counts with low-stock flags, tied to the items on your invoices.</p></div>
+<div class="card"><h3>Payments recorded</h3><p>Cash, bank transfer and card payments recorded against each invoice, with a clear balance.</p></div>
+<div class="card"><h3>Simple reports</h3><p>Monthly sales, outstanding amounts and top customers — one screen, no spreadsheet wrestling.</p></div>
+<div class="card"><h3>Multi-user ready</h3><p>Owner, accountant and staff roles with sensible permissions on Growth and Pro plans.</p></div>
+</div></div></section>
+<section><div class="wrap grid2">
+<div>
+<h2>How it works</h2>
+<div class="steps">
+<div class="step"><b>1</b><div><strong>Add your business.</strong> Name, logo and tax details once — they appear on every invoice.</div></div>
+<div class="step"><b>2</b><div><strong>Send invoices.</strong> Pick a customer, add items, send by email or WhatsApp.</div></div>
+<div class="step"><b>3</b><div><strong>Get paid, automatically chased.</strong> Reminders follow up; you record the payment when it lands.</div></div>
+</div>
+</div>
+<div id="lead">
+<h2>Get a free Billora demo</h2>
+<form class="lead" data-lead-form="saas" novalidate>
+<div data-form-fields>
+<label for="saas-name">Full name</label>
+<input id="saas-name" data-name type="text" autocomplete="name" placeholder="e.g. Ali Raza">
+<p class="error" data-error-for="name" role="alert"></p>
+<label for="saas-phone">Mobile number (Pakistan)</label>
+<input id="saas-phone" data-phone type="tel" autocomplete="tel" placeholder="03XX XXXXXXX">
+<p class="error" data-error-for="phone" role="alert"></p>
+<label for="saas-interest">I am interested in</label>
+<select id="saas-interest" data-interest>
+<option value="">Choose one…</option>
+<option>Invoicing &amp; billing</option><option>Inventory basics</option><option>Payments &amp; reminders</option><option>Full demo walkthrough</option>
+</select>
+<p class="error" data-error-for="interest" role="alert"></p>
+<label for="saas-msg">Message (optional)</label>
+<textarea id="saas-msg" data-message placeholder="Tell us about your business (optional)"></textarea>
+<button class="btn" type="submit" style="margin-top:16px">Request my demo</button>
+<p class="note">Demo wiring: on submit, this form appends a row to a local sheet log in your browser and records local GA4-style + Pixel-style events. In production it posts to the client's Google Sheet. See the <a href="logs.html">Demo Logs</a>.</p>
+</div>
+<div class="confirmation" data-confirmation hidden></div>
+</form>
+</div>
+</div></section>
+<section class="alt" id="pricing"><div class="wrap">
+<h2>Demo pricing — monthly or yearly</h2>
+<button class="btn btn-ghost" type="button" data-billing-toggle aria-pressed="false">Billing: Monthly</button>
+<p class="note" data-billing-note></p>
+<div class="grid3" style="margin-top:16px">
+<div class="card"><h3>Starter</h3><p class="price" data-price="12">$12 / month</p><ul class="clean"><li>Up to 50 invoices / month</li><li>1 user</li><li>Payment reminders</li><li>Email support</li></ul></div>
+<div class="card"><h3>Growth</h3><p class="price" data-price="29">$29 / month</p><ul class="clean"><li>Unlimited invoices</li><li>5 users</li><li>Inventory basics</li><li>WhatsApp reminders</li><li>Priority support</li></ul></div>
+<div class="card"><h3>Pro</h3><p class="price" data-price="59">$59 / month</p><ul class="clean"><li>Everything in Growth</li><li>Unlimited users</li><li>Multi-branch reports</li><li>API access</li><li>Dedicated support</li></ul></div>
+</div>
+<p class="note">All prices are DEMO prices for this fictional product.</p>
+</div></section>
+</main>
+<footer class="site"><div class="wrap">
+<p><strong>DEMO:</strong> Billora is fictional; no real product, customers or results are claimed. Part of the Landing Page Set ×3 (Portfolio Queue #9) — <a href="index.html">back to the set gallery</a> · <a href="logs.html">Demo Logs</a>.</p>
+</div></footer>
+<script src="js/logic.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

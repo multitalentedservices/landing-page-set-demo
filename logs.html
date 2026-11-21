@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo Logs — Sheet Log &amp; Event Log | Landing Page Set</title>
+<meta name="description" content="Demo data viewer: the local sheet log and analytics event log written by the three landing pages in this demo set.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body data-theme="hub">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="demo-ribbon">DEMO DATA VIEWER — everything below lives only in this browser's local storage.</div>
+<header class="site"><div class="wrap header-in">
+<a class="brand" href="index.html">Landing Set ×3 — Demo Logs</a>
+<nav class="main" aria-label="Main">
+<a href="index.html">Set Gallery</a><a href="saas.html">SaaS</a><a href="agency.html">Agency</a><a href="local.html">Local Services</a>
+</nav></div></header>
+<main id="main" data-logs>
+<section><div class="wrap">
+<h1>Demo logs — verify the wiring yourself</h1>
+<p class="lede">Submit a lead form or tap a WhatsApp button on any of the three landing pages, then come back here. The sheet log mimics the rows that, in production, would be posted to the client's Google Sheet. The event log records the local GA4-style and Meta Pixel-style stub events. No live analytics endpoint is ever called — the IDs in the config are DEMO placeholders.</p>
+<p data-log-counts><strong>Sheet rows: 0 · Events: 0</strong></p>
+<button class="btn btn-ghost" type="button" data-clear-logs>Clear both logs</button>
+<h2 style="margin-top:32px">Sheet log (lead rows)</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Timestamp</th><th>Page</th><th>Name</th><th>Phone</th><th>Interest</th><th>Reference</th></tr></thead>
+<tbody data-sheet-body><tr><td colspan="6">No leads yet.</td></tr></tbody>
+</table></div>
+<h2 style="margin-top:32px">Event log (GA4-style + Pixel-style, local stubs)</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Timestamp</th><th>Source</th><th>Event</th><th>Page</th><th>Detail</th></tr></thead>
+<tbody data-event-body><tr><td colspan="5">No events yet.</td></tr></tbody>
+</table></div>
+<p class="note">Honest note: this viewer reads the same local storage the forms write to. It proves the demo wiring end-to-end; it is not a real Google Sheet or a real analytics property.</p>
+</div></section>
+</main>
+<footer class="site"><div class="wrap">
+<p><strong>DEMO:</strong> all data on this page was created by your own actions in this browser during the demo. <a href="index.html">Back to the set gallery</a>.</p>
+</div></footer>
+<script src="js/logic.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

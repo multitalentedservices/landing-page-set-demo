@@ -1,0 +1,126 @@
+PASS 3 landing pages defined
+PASS page ids saas/agency/local
+PASS each page has >=4 interests
+PASS valid phone 0321
+PASS valid phone +92
+PASS invalid phone 123
+PASS invalid phone landline
+PASS invalid phone too long
+PASS validate name names constraint
+PASS validate phone names PK format
+PASS validate interest names the ask
+PASS validate all good = {}
+PASS ref format
+PASS ref deterministic
+PASS ref differs by page
+PASS monthly exact starter = $12
+PASS yearly exact starter = monthly x10
+PASS monthly exact growth = $29
+PASS yearly exact growth = monthly x10
+PASS monthly exact pro = $59
+PASS yearly exact pro = monthly x10
+PASS boundary: monthly 1 -> yearly 10
+PASS boundary: monthly 0 -> yearly 0
+PASS tiers are 12/29/59
+PASS sheet row round-trip
+PASS sheet row has all columns
+PASS lead_submit makes ga4 + pixel pair
+PASS events carry DEMO ids
+PASS whatsapp event pair
+PASS wa link saas is wa.me with offer text
+PASS wa link agency is wa.me with offer text
+PASS wa link local is wa.me with offer text
+PASS wa links differ per page
+PASS contrast hub ink on bg = 15.48
+PASS contrast hub muted on bg = 8.75
+PASS contrast hub bg on ink (ribbon/btn) = 15.48
+PASS contrast hub muted on surface = 7.91
+PASS contrast hub error on bg = 5.93
+PASS contrast hub focus ink on bg (>=3) = 15.48
+PASS contrast saas ink on white = 17.37
+PASS contrast saas muted on white = 8.81
+PASS contrast saas white on accent = 7.90
+PASS contrast saas accent on white = 7.90
+PASS contrast saas ink on surface = 15.33
+PASS contrast saas muted on surface = 7.77
+PASS contrast saas error on white = 6.54
+PASS contrast saas focus accent on white (>=3) = 7.90
+PASS contrast saas white on wa green = 7.35
+PASS contrast agency ink on bg = 15.31
+PASS contrast agency muted on bg = 8.31
+PASS contrast agency bg on ink (btn/marquee) = 15.31
+PASS contrast agency ink on card = 16.71
+PASS contrast agency muted on card = 9.06
+PASS contrast agency accent on bg (large/work-num) = 6.04
+PASS contrast agency ink on surface = 13.31
+PASS contrast agency error on bg = 5.40
+PASS contrast agency focus ink on bg (>=3) = 15.31
+PASS contrast agency white on wa green = 7.35
+PASS contrast local ink on bg = 15.06
+PASS contrast local muted on bg = 9.02
+PASS contrast local white on accent = 7.31
+PASS contrast local ink on surface = 13.80
+PASS contrast local muted on surface = 8.27
+PASS contrast local error on bg = 6.23
+PASS contrast local focus accent on bg (>=3) = 6.96
+PASS contrast local white on wa green = 7.35
+PASS NO googletagmanager endpoint
+PASS NO connect.facebook.net endpoint
+PASS NO google-analytics endpoint
+PASS NO gtag script call
+PASS analytics config is DEMO
+PASS index.html has DEMO label
+PASS index.html no lorem
+PASS index.html has title
+PASS index.html has meta description
+PASS saas.html has DEMO label
+PASS saas.html no lorem
+PASS saas.html has title
+PASS saas.html has meta description
+PASS agency.html has DEMO label
+PASS agency.html no lorem
+PASS agency.html has title
+PASS agency.html has meta description
+PASS local.html has DEMO label
+PASS local.html no lorem
+PASS local.html has title
+PASS local.html has meta description
+PASS logs.html has DEMO label
+PASS logs.html no lorem
+PASS logs.html has title
+PASS logs.html has meta description
+PASS unique titles
+PASS saas.html has lead form
+PASS saas.html has WhatsApp CTA with data-wa
+PASS saas.html form names sheet wiring honestly
+PASS saas.html has confirmation slot
+PASS agency.html has lead form
+PASS agency.html has WhatsApp CTA with data-wa
+PASS agency.html form names sheet wiring honestly
+PASS agency.html has confirmation slot
+PASS local.html has lead form
+PASS local.html has WhatsApp CTA with data-wa
+PASS local.html form names sheet wiring honestly
+PASS local.html has confirmation slot
+PASS saas has billing toggle
+PASS saas has 3 priced tiers in markup
+PASS saas mock labelled DEMO DATA
+PASS local has tel: click-to-call
+PASS local has PKR prices
+PASS local names Gujranwala areas
+PASS local form above fold (form before services section)
+PASS agency has kinetic headline
+PASS agency has marquee band
+PASS logs renders sheet + event tables
+PASS logs has clear control
+PASS all local links/assets resolve
+PASS sitemap + robots exist
+PASS CSS has reduced-motion block
+PASS CSS scopes animation under no-preference
+PASS code < 400KB (45978B)
+PASS image <=120KB local-hero.jpg (113529B)
+PASS image <=120KB local-team.jpg (114978B)
+PASS image <=120KB saas-workspace.jpg (116086B)
+PASS media <=1.6MB (344593B)
+PASS agency is type-only (no jpg referenced)
+TOTAL: 125 PASS / 0 FAIL

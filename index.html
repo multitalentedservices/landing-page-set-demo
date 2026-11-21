@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page Set ×3 — Demo Gallery | MTS Portfolio</title>
+<meta name="description" content="Demo gallery: three landing pages in three different design languages — SaaS-modern, agency kinetic-type and local-services. All businesses, offers and data are fictional demo content.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body data-theme="hub">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="demo-ribbon">DEMO — Landing Page Set ×3 · All businesses, offers and data on these pages are fictional demo content. Client-facing owner: BalanceBit Solutions · Production: MTS</div>
+<header class="site"><div class="wrap header-in">
+<a class="brand" href="index.html">Landing Set ×3 — Demo Gallery</a>
+<nav class="main" aria-label="Main">
+<a href="saas.html">SaaS</a><a href="agency.html">Agency</a><a href="local.html">Local Services</a><a href="logs.html">Demo Logs</a>
+</nav></div></header>
+<main id="main">
+<section class="hero"><div class="wrap">
+<h1>One set. Three landing pages. Three different design languages.</h1>
+<p class="lede">This demo set proves a single landing-page build can speak in completely different registers: a clean SaaS product page, a kinetic-type agency poster page, and a phone-first local-services page. Each page has one conversion goal — a working demo lead form wired to local stubs for a Google Sheet log, GA4-style events and Meta Pixel-style events.</p>
+<div class="cta-row"><a class="btn btn-ink" href="logs.html">See the demo data logs</a></div>
+</div></section>
+<section class="alt"><div class="wrap grid3">
+<article class="card hub-card"><h2><a href="saas.html">A — Billora (SaaS-modern)</a></h2>
+<div class="swatch" aria-hidden="true"><span style="background:#FFFFFF"></span><span style="background:#4338CA"></span><span style="background:#EEF0FE"></span></div>
+<p>A fictional invoicing app for small businesses. Light ground, one indigo accent, Sora + Inter, a product-UI mock built in HTML/CSS with demo data labelled, feature grid and a monthly/yearly pricing toggle.</p>
+<p><a href="saas.html"><strong>Open the SaaS page →</strong></a></p></article>
+<article class="card hub-card"><h2><a href="agency.html">B — Studio Kinetiq (Agency kinetic-type)</a></h2>
+<div class="swatch" aria-hidden="true"><span style="background:#EFE9DC"></span><span style="background:#16130E"></span><span style="background:#9A3412"></span></div>
+<p>A fictional creative agency whose design IS kinetic typography: oversized moving display type in Archivo Black on a warm poster ground. Type-only by design — no photography. Fully static and complete under reduced motion.</p>
+<p><a href="agency.html"><strong>Open the agency page →</strong></a></p></article>
+<article class="card hub-card"><h2><a href="local.html">C — CoolCare (Local-services)</a></h2>
+<div class="swatch" aria-hidden="true"><span style="background:#FFF9EC"></span><span style="background:#9A3412"></span><span style="background:#FCEFCB"></span></div>
+<p>A fictional AC and home-services business in Gujranwala. Trust-led and phone-first: click-to-call, a prominent WhatsApp CTA, PKR service prices, areas served and the lead form above the fold.</p>
+<p><a href="local.html"><strong>Open the local page →</strong></a></p></article>
+</div></section>
+<section><div class="wrap">
+<h2>How the demo wiring works</h2>
+<div class="grid3">
+<div class="card"><h3>Lead form → Sheet log</h3><p>Every form appends a row (timestamp, page, name, phone, interest) to a local sheet log in your browser. In production this posts to the client's Google Sheet — the note on each form says so honestly.</p></div>
+<div class="card"><h3>GA4 + Pixel events (local stubs)</h3><p>Analytics config holds DEMO placeholder IDs only. A local track() function records page_view, lead_submit and whatsapp_click events to a local event log. No live analytics endpoint is called anywhere.</p></div>
+<div class="card"><h3>Verify it yourself</h3><p>Submit a lead or tap WhatsApp on any page, then open the <a href="logs.html">Demo Logs page</a> — your rows and events appear there in tables, with a clear-logs control.</p></div>
+</div></div></section>
+</main>
+<footer class="site"><div class="wrap">
+<p><strong>DEMO labelling:</strong> Billora, Studio Kinetiq and CoolCare are fictional. No real clients, testimonials or results are claimed. Demo data lives only in your browser's local storage.</p>
+<p>Video: none — photo + CSS motion (the agency page's motion story is kinetic CSS type). Landing Page Set ×3 · Portfolio Queue #9 · BalanceBit Solutions (client-facing) · MTS (production).</p>
+</div></footer>
+<script src="js/logic.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
