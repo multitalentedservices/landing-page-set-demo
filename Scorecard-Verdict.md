@@ -33,3 +33,31 @@ Reasons (defects as: what is wrong · where · what fixed looks like):
 Next step: [ ] To AICOS-025 release gate   [X] Back to Gate 5 (evidence completions only — both are external to the build)   [ ] Back to Gate 2
 
 Disclosures: no test assertion was amended. One build fix is disclosed in BUILD-NOTES.md (local page CTA bar rebuilt from sticky to normal flow after the first full-page capture showed stitch-overlap; affected sets re-shot clean). The screenshot audit excludes marquee-track internals (intentionally wider than its clipped band; the band itself is audited, lesson 1 clip-aware rule).
+
+## Addendum — Round-2 Re-verification FIX RUN (2026-11-22)
+
+Independent round-2 re-verification (`Reverification-2026-11-21/round2/REPORT.md`) found 1 visible
++ 1 minor defect on this site. Both FIXED, re-shot and read; battery **125 PASS / 0 FAIL**
+unamended after fixes:
+
+- **LP-1 (visible) — Demo Logs tables hid columns on phone with no cue.** Measured pre-fix at
+  390px: Sheet-log table 459px wide inside a 346px `overflow-x:auto` wrapper (Interest +
+  Reference off-view), Event-log 356px in 346px (Detail clipped), headers cut mid-word.
+  Fix (the round-1 BE-1 treatment in this site's own system): both tables carry
+  `class="log-table"`, every rendered cell now carries a `data-th` label from the app.js
+  renderers, and at ≤640px the tables become labelled cards — thead hidden, each row a
+  bordered card, each cell a label/value pair; the wrap's sideways scroll is removed in that
+  mode so nothing can sit off-view. Proof: seeded-logs probe at 390px — both tables 350px
+  wide, 12/12 sheet cells and 10/10 event cells labelled, 0 off-view elements, 0 document
+  overflow (`round2/fix2-landing-page-set/logs-state-seeded-phone.png`, read by eye: all six
+  sheet columns and all five event columns visible under their labels).
+- **LP-2 (minor) — Header flush-left at ≤768px.** Same shorthand trap as LMS-1:
+  `.header-in{padding:14px 0}` (and `padding:10px 0` in the ≤760px block) zeroed the `.wrap`
+  inline padding on the shared element. Both are now `padding-block`. Proof: DOM geometry —
+  brand left = 20px at 768/390/320 (was 0); re-shoot 15 combos + 5 probe320, 0 problems
+  (`round2/fix2-landing-page-set/`); index-phone.png read by eye.
+
+Score unchanged: **90/100 — REJECT (evidence bar only)** — served-preview CWV + AICOS-112 §0
+sign-off still outstanding; defect repairs do not manufacture them.
+Push of the changed text files (css/style.css, js/app.js, logs.html, Scorecard-Verdict.md,
+tests-output.log) is pending the GitHub connector's approval card — see FIX-REPORT-ROUND2.md.

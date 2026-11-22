@@ -10,7 +10,7 @@ a{color:var(--accent)}
 .skip-link:focus{left:8px;top:8px}
 .demo-ribbon{background:var(--ink);color:var(--bg);text-align:center;font-size:.85rem;padding:8px 12px;font-weight:600;letter-spacing:.02em}
 header.site{border-bottom:2px solid var(--ink);background:var(--bg)}
-.header-in{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;flex-wrap:wrap}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px;flex-wrap:wrap}
 .brand{font-family:var(--display);font-weight:800;font-size:1.25rem;color:var(--ink);text-decoration:none}
 nav.main{display:flex;gap:18px;flex-wrap:wrap}
 nav.main a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.98rem}
@@ -51,6 +51,17 @@ table{border-collapse:collapse;width:100%;font-size:.95rem}
 th,td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
 th{background:var(--surface);font-family:var(--display)}
 .table-wrap{overflow-x:auto;border:2px solid var(--ink);border-radius:12px;background:var(--card)}
+/* Round-2 fix (LP-1): on phone the log tables become labelled cards — every column
+   stays in the initial view under its own label; nothing sits off-view. */
+@media (max-width:640px){
+  [data-logs] .table-wrap{overflow-x:visible;border:none;border-radius:0;background:transparent}
+  .log-table,.log-table tbody,.log-table tr,.log-table td{display:block;width:100%}
+  .log-table thead{display:none}
+  .log-table tr{border:2px solid var(--ink);border-radius:12px;padding:10px 14px;margin-bottom:12px;background:var(--card)}
+  .log-table td{border:none;padding:5px 0;display:flex;justify-content:space-between;align-items:baseline;gap:16px;text-align:right;overflow-wrap:anywhere}
+  .log-table td[data-th]::before{content:attr(data-th);font-family:var(--display);font-weight:700;text-align:left;color:var(--ink);flex:none}
+  .log-table td[colspan]{display:block;text-align:left}
+}
 footer.site{border-top:2px solid var(--ink);padding:28px 0;margin-top:20px}
 footer.site p{color:var(--muted);font-size:.95rem}
 /* hub */
@@ -103,5 +114,5 @@ body[data-theme="local"]{--bg:#FFF9EC;--surface:#FCEFCB;--card:#FFFFFF;--ink:#2A
  h1{font-size:2.1rem}
  .kinetic .line{font-size:clamp(2.4rem,15vw,4rem)}
  section{padding:32px 0}
- .header-in{padding:10px 0}
+ .header-in{padding-block:10px}
 }

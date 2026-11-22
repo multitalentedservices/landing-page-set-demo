@@ -72,8 +72,8 @@ if(logsRoot){
  function renderLogs(){
   var sheet=read(LP.SHEET_KEY),events=read(LP.EVENT_KEY);
   var sBody=document.querySelector('[data-sheet-body]'),eBody=document.querySelector('[data-event-body]');
-  sBody.innerHTML=sheet.length?sheet.map(function(r){return '<tr><td>'+esc(r.timestamp)+'</td><td>'+esc(r.page)+'</td><td>'+esc(r.name)+'</td><td>'+esc(r.phone)+'</td><td>'+esc(r.interest)+'</td><td>'+esc(r.ref)+'</td></tr>';}).join(''):'<tr><td colspan="6">No leads yet — submit a demo form on any landing page.</td></tr>';
-  eBody.innerHTML=events.length?events.map(function(r){return '<tr><td>'+esc(r.timestamp)+'</td><td>'+esc(r.source)+'</td><td>'+esc(r.event)+'</td><td>'+esc(r.page)+'</td><td>'+esc(r.detail)+'</td></tr>';}).join(''):'<tr><td colspan="5">No events yet.</td></tr>';
+  sBody.innerHTML=sheet.length?sheet.map(function(r){return '<tr><td data-th="Timestamp">'+esc(r.timestamp)+'</td><td data-th="Page">'+esc(r.page)+'</td><td data-th="Name">'+esc(r.name)+'</td><td data-th="Phone">'+esc(r.phone)+'</td><td data-th="Interest">'+esc(r.interest)+'</td><td data-th="Reference">'+esc(r.ref)+'</td></tr>';}).join(''):'<tr><td colspan="6">No leads yet — submit a demo form on any landing page.</td></tr>';
+  eBody.innerHTML=events.length?events.map(function(r){return '<tr><td data-th="Timestamp">'+esc(r.timestamp)+'</td><td data-th="Source">'+esc(r.source)+'</td><td data-th="Event">'+esc(r.event)+'</td><td data-th="Page">'+esc(r.page)+'</td><td data-th="Detail">'+esc(r.detail)+'</td></tr>';}).join(''):'<tr><td colspan="5">No events yet.</td></tr>';
   var c=document.querySelector('[data-log-counts]');if(c)c.textContent='Sheet rows: '+sheet.length+' · Events: '+events.length;
  }
  renderLogs();
