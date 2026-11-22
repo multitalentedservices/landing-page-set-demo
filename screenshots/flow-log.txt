@@ -1,0 +1,22 @@
+saas phone error CONTENT -> Enter a Pakistani mobile in the format 03XX XXXXXXX (11 digits starting 03).
+saas phone error after fix (must be empty) -> ""
+saas confirmation CONTENT -> Thank you, Ali Raza. Your demo reference is LP-DEMO-9946. Summary: Billora (SaaS) — interest: Invoicing & billing; phone: 0321 1234567. This is demo data stored only in this browser (local sheet log). In production this form posts to the cl
+saas FIRING whatsapp events recorded -> 2 (ga4+meta_pixel)
+saas sheet rows so far -> 1 last ref=LP-DEMO-9946
+agency phone error CONTENT -> Enter a Pakistani mobile in the format 03XX XXXXXXX (11 digits starting 03).
+agency phone error after fix (must be empty) -> ""
+agency confirmation CONTENT -> Thank you, Mahnoor Fatima. Your demo reference is LP-DEMO-1265. Summary: Studio Kinetiq (Agency) — interest: Brand identity; phone: 0321 1234567. This is demo data stored only in this browser (local sheet log). In production this form posts
+agency FIRING whatsapp events recorded -> 2 (ga4+meta_pixel)
+agency sheet rows so far -> 2 last ref=LP-DEMO-1265
+local phone error CONTENT -> Enter a Pakistani mobile in the format 03XX XXXXXXX (11 digits starting 03).
+local phone error after fix (must be empty) -> ""
+local confirmation CONTENT -> Thank you, Usman Tariq. Your demo reference is LP-DEMO-5710. Summary: CoolCare AC Services (Local) — interest: AC repair; phone: 0321 1234567. This is demo data stored only in this browser (local sheet log). In production this form posts to
+local FIRING whatsapp events recorded -> 2 (ga4+meta_pixel)
+local sheet rows so far -> 3 last ref=LP-DEMO-5710
+saas prices MONTHLY rendered -> $12 / month | $29 / month | $59 / month
+saas prices YEARLY rendered -> $120 / year | $290 / year | $590 / year
+logs counts -> Sheet rows: 3 · Events: 20
+logs sheet contains ref saas LP-DEMO-9946 -> true
+logs sheet contains ref agency LP-DEMO-1265 -> true
+logs sheet contains ref local LP-DEMO-5710 -> true
+logs events contain lead_submit -> 6 rows, whatsapp_click -> 6 rows

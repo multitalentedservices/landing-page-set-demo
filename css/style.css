@@ -3,7 +3,7 @@
 html{overflow-x:clip}
 body{margin:0;font-family:var(--body);color:var(--ink);background:var(--bg);font-size:17px;line-height:1.55}
 img{max-width:100%;height:auto;display:block}
-a{color:var(--accent)}
+a{color:var(--accent);text-decoration:none}
 :focus-visible{outline:3px solid var(--focus);outline-offset:2px}
 .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
 .skip-link{position:absolute;left:-999px;top:0;background:var(--ink);color:var(--bg);padding:10px 16px;z-index:50}
@@ -116,3 +116,17 @@ body[data-theme="local"]{--bg:#FFF9EC;--surface:#FCEFCB;--card:#FFFFFF;--ink:#2A
  section{padding:32px 0}
  .header-in{padding-block:10px}
 }
+/* === Premium upgrade 2026-11-22 (Landing Set) === */
+.mock-tabs{display:flex;gap:6px;padding:10px 12px 0;flex-wrap:wrap}
+.mock-tab{min-height:44px;padding:8px 14px;border-radius:999px;border:2px solid var(--ink);background:var(--card);color:var(--ink);font:700 .9rem var(--body);cursor:pointer}
+.mock-tab[aria-selected="true"]{background:var(--accent);color:#fff}
+.mock-tab:hover{border-color:var(--accent)}
+.mock-tab:active{transform:translateY(1px)}
+.calc{margin-top:20px;background:var(--card);border:2px solid var(--ink);border-radius:14px;padding:22px}
+.calc-total{font-family:var(--display);font-size:1.25rem;margin:14px 0 0}
+.calc-total .note{font-family:var(--body)}
+/* Agency display scale: the set's boldest type moment */
+body[data-theme="agency"] .kinetic .line{font-size:clamp(3.4rem,12.5vw,10rem)}
+.kinetic-live .kinetic{overflow:hidden}
+.kchar{display:inline-block}
+@media (prefers-reduced-motion: reduce){.kchar{transform:none!important;opacity:1!important}}

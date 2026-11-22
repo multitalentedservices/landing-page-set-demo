@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Billora — Invoicing for Small Businesses (Demo) | Landing Set A</title>
 <meta name="description" content="Demo SaaS landing page: Billora, a fictional invoicing and inventory app for small businesses. Demo prices and demo data only.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="css/style.css">
+<noscript><style>[data-ppanel][hidden]{display:block!important}.mock-tabs{display:none!important}</style></noscript>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Billora (Demo)","applicationCategory":"BusinessApplication","offers":{"@type":"Offer","price":"12","priceCurrency":"USD"}}</script>
 </head>
@@ -30,11 +31,27 @@
 <div>
 <div class="mock" role="img" aria-label="Illustrative Billora product interface mock built in HTML and CSS, showing demo invoice rows">
 <div class="mock-bar">Billora — Invoices (DEMO DATA)</div>
+<div class="mock-tabs" role="tablist" aria-label="Billora product views (demo)">
+<button class="mock-tab" role="tab" aria-selected="true" aria-controls="panel-invoices" id="tab-invoices" data-ptab="invoices" type="button">Invoices</button>
+<button class="mock-tab" role="tab" aria-selected="false" aria-controls="panel-inventory" id="tab-inventory" data-ptab="inventory" type="button" tabindex="-1">Inventory</button>
+<button class="mock-tab" role="tab" aria-selected="false" aria-controls="panel-reports" id="tab-reports" data-ptab="reports" type="button" tabindex="-1">Reports</button>
+</div>
 <div class="mock-body">
+<div role="tabpanel" id="panel-invoices" aria-labelledby="tab-invoices" data-ppanel="invoices">
 <div class="mock-row"><span>INV-1042 · Corner Bakery</span><span class="pill">$240 · Paid</span></div>
 <div class="mock-row"><span>INV-1043 · City Pharmacy</span><span class="pill">$510 · Sent</span></div>
 <div class="mock-row"><span>INV-1044 · Bloom Salon</span><span class="pill">$95 · Reminder on</span></div>
+</div>
+<div role="tabpanel" id="panel-inventory" aria-labelledby="tab-inventory" data-ppanel="inventory" hidden>
 <div class="mock-row"><span>Inventory · A4 paper</span><span class="pill">Low stock</span></div>
+<div class="mock-row"><span>Inventory · Invoice books</span><span class="pill">In stock</span></div>
+<div class="mock-row"><span>Inventory · Printer ink</span><span class="pill">In stock</span></div>
+</div>
+<div role="tabpanel" id="panel-reports" aria-labelledby="tab-reports" data-ppanel="reports" hidden>
+<div class="mock-row"><span>Collected (demo)</span><span class="pill">$240 · Paid</span></div>
+<div class="mock-row"><span>Outstanding (demo)</span><span class="pill">$510 · Sent</span></div>
+<div class="mock-row"><span>Being chased (demo)</span><span class="pill">$95 · Reminder on</span></div>
+</div>
 </div></div>
 <img class="hero-photo" src="assets/saas-workspace.jpg" alt="Small business workspace with a laptop showing charts (demo photography)" style="margin-top:16px">
 </div>
@@ -100,5 +117,6 @@
 </div></footer>
 <script src="js/logic.js"></script>
 <script src="js/app.js"></script>
+<script src="js/premium-saas.js" defer></script>
 </body>
 </html>

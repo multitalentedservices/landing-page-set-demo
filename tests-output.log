@@ -117,7 +117,7 @@ PASS all local links/assets resolve
 PASS sitemap + robots exist
 PASS CSS has reduced-motion block
 PASS CSS scopes animation under no-preference
-PASS code < 400KB (47094B)
+PASS code < 400KB (50084B)
 PASS image <=120KB local-hero.jpg (113529B)
 PASS image <=120KB local-team.jpg (114978B)
 PASS image <=120KB saas-workspace.jpg (116086B)

@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CoolCare AC Services — Gujranwala (Demo) | Landing Set C</title>
 <meta name="description" content="Demo local-services landing page: CoolCare, a fictional AC and home-services business in Gujranwala with PKR prices, areas served, click-to-call and WhatsApp. Demo content only.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700;800&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"CoolCare AC Services (Demo)","areaServed":"Gujranwala","telephone":"+92-300-0000000","openingHours":"Mo-Su 08:00-22:00"}</script>
@@ -70,6 +70,21 @@
 <div class="card"><h3>Deep home cleaning</h3><p class="price">PKR 12,000</p><p>Full-home deep clean for a typical 5-marla house; quoted exactly after photos.</p></div>
 <div class="card"><h3>Plumbing repair</h3><p class="price">PKR 1,200</p><p>Visit fee for leaks, taps and fittings; parts quoted before fitting.</p></div>
 </div>
+<div class="calc" data-quote-calc>
+<h3 style="margin-top:0">Instant demo quote — pick a service</h3>
+<label for="calc-service">Service</label>
+<select id="calc-service" data-calc-service>
+<option value="2500">AC general service — PKR 2,500</option>
+<option value="1500">AC repair visit — PKR 1,500</option>
+<option value="6500">AC gas refill — PKR 6,500</option>
+<option value="8000">AC installation — PKR 8,000</option>
+<option value="12000">Deep home cleaning — PKR 12,000</option>
+<option value="1200">Plumbing repair — PKR 1,200</option>
+</select>
+<label for="calc-qty">Units / visits</label>
+<input id="calc-qty" data-calc-qty type="number" min="1" max="20" value="1" inputmode="numeric">
+<p class="calc-total" aria-live="polite">Estimated total: <strong data-calc-total>PKR 2,500</strong> <span class="note">(demo estimate — the final price is agreed before work starts)</span></p>
+</div>
 <p class="note">All prices are DEMO prices for this fictional business. The rule that matters: the final price is agreed before work starts.</p>
 </div></section>
 <section id="areas"><div class="wrap grid2">
@@ -88,5 +103,6 @@
 </div></footer>
 <script src="js/logic.js"></script>
 <script src="js/app.js"></script>
+<script src="js/premium-local.js" defer></script>
 </body>
 </html>

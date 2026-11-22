@@ -1,0 +1,92 @@
+{
+  "index@phone": {
+    "overflowX": 0,
+    "badEls": [],
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "index@tablet": {
+    "overflowX": 0,
+    "badEls": [],
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "index@desktop": {
+    "overflowX": 0,
+    "badEls": [],
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "saas@phone": {
+    "overflowX": 0,
+    "badEls": [],
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "saas@tablet": {
+    "overflowX": 0,
+    "badEls": [],
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "saas@desktop": {
+    "overflowX": 0,
+    "badEls": [],
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "agency@phone": {
+    "overflowX": 0,
+    "badEls": [],
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "agency@tablet": {
+    "overflowX": 0,
+    "badEls": [],
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "agency@desktop": {
+    "overflowX": 0,
+    "badEls": [],
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "local@phone": {
+    "overflowX": 0,
+    "badEls": [],
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "local@tablet": {
+    "overflowX": 0,
+    "badEls": [],
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "local@desktop": {
+    "overflowX": 0,
+    "badEls": [],
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "logs@phone": {
+    "overflowX": 0,
+    "badEls": [],
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "logs@tablet": {
+    "overflowX": 0,
+    "badEls": [],
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "logs@desktop": {
+    "overflowX": 0,
+    "badEls": [],
+    "brokenImgs": [],
+    "textBad": []
+  }
+}

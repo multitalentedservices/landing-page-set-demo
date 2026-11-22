@@ -61,3 +61,10 @@ Score unchanged: **90/100 — REJECT (evidence bar only)** — served-preview CW
 sign-off still outstanding; defect repairs do not manufacture them.
 Push of the changed text files (css/style.css, js/app.js, logs.html, Scorecard-Verdict.md,
 tests-output.log) is pending the GitHub connector's approval card — see FIX-REPORT-ROUND2.md.
+
+## Addendum — Premium Upgrade (2026-11-22)
+
+One signature event per landing (§5 #9): SaaS = live product-UI panel with working in-page tabs (Invoices/Inventory/Reports, roving-tabindex keyboard support, demo figures only); Agency = GSAP + SplitText kinetic-type scene at full display scale (clamp(3.4rem,12.5vw,10rem), 21 char elements, 147px first-line height at 1440); Local = live quote calculator using only the page's published demo prices (verified PKR 6,500 × 3 = PKR 19,500). Hub + Logs untouched (honest proof pages).
+P-verdicts: P1 PASS (audit base rules untouched, 0 offenders stand) · P2 n/a by design (no smooth-scroll on this set; not claimed) · P3 PASS (one signature per landing, no uniform fade-up added) · P4 PASS (agency display scale) · P5 PASS (real product-UI composition on SaaS) · P6 PASS (tabs + calculator depth) · P7 PASS (tab hover/focus/active in the site's own system) · P8 PASS — measured gzip JS/page: hub/logs 4,046 B · SaaS 4,512 B · Local 4,397 B (plain ≤20 KB) · Agency 36,648 B (hero ≤90 KB) · P9 PASS (reduced-motion: agency scene does not run, type complete/static; JS-disabled: SaaS panels all render via noscript rule — verified) · P10 PASS (no content/price/data changed).
+Battery: tests.js unamended 125/125 PASS before and after. Separate premium-checks.js: tabs live, calculator exact, SplitText chars present — all PASS. Screenshots re-shot: 15 combos, 0 problems; screenshots/signature-moment.png = agency kinetic mid-animation (read by eye).
+Re-score: Area 1 13→14, Area 4 9→10. **TOTAL: 92/100 — REJECT (evidence bar only)** — served-preview CWV + AICOS-112 §0 sign-off still outstanding, not manufactured by this pass.
